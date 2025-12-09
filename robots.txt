@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://taizun.site/sitemap.xml
+
+# Disallow crawling of any admin or private directories (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
