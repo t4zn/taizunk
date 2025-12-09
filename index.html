@@ -90,22 +90,49 @@ scroll-behavior: smooth;
     <main class="w-full overflow-hidden">
         
         <!-- Hero Section -->
-        <section class="max-w-[1200px] mx-auto px-6 pt-32 pb-24 md:pt-48 md:pb-32 flex flex-col md:flex-row items-start md:items-center gap-12 md:gap-24">
-            <!-- Hero Image -->
-            <div class="reveal-up relative w-full max-w-[350px] aspect-square flex-shrink-0 md:ml-12">
-                <div class="w-full h-full rounded-none overflow-hidden" style="filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));">
-                    <img src="Taizun.png" alt="Hero Image" class="w-full h-full object-cover">
+        <section class="max-w-[1200px] mx-auto px-6 pt-24 pb-16 md:pt-48 md:pb-32">
+            <!-- Mobile Layout -->
+            <div class="block md:hidden">
+                <!-- Image and Title Row -->
+                <div class="flex flex-row items-center gap-4 mb-6">
+                    <!-- Hero Image -->
+                    <div class="reveal-up relative w-[120px] aspect-square flex-shrink-0">
+                        <div class="w-full h-full rounded-full overflow-hidden" style="filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));">
+                            <img src="Taizun.png" alt="Hero Image" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="reveal-up reveal-delay-1 text-3xl leading-[0.95] tracking-tighter-custom font-medium text-[#0e0e0e] flex-1">
+                        AI Developer
+                    </h1>
+                </div>
+
+                <!-- Description Below -->
+                <div class="reveal-up reveal-delay-2 text-lg leading-relaxed font-medium text-[#0e0e0e] space-y-1">
+                    <p>Currently scaling a learning platform tailored for Medi-Caps students called <a href="https://medinotes.live" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors">Medinotes.</a></p>
+                    <p class="text-gray-500 font-normal">Outside of this, I work on full-stack AI products and experiment with 3D web experiences.</p>
                 </div>
             </div>
 
-            <!-- Hero Text -->
-            <div class="reveal-up reveal-delay-1 flex flex-col gap-8 max-w-2xl">
-                <h1 class="text-5xl md:text-[88px] leading-[0.95] tracking-tighter-custom font-medium text-[#0e0e0e]">
-                    AI Developer
-                </h1>
-                <div class="text-xl md:text-2xl leading-relaxed font-medium text-[#0e0e0e] space-y-1">
-                    <p>Currently scaling a learning platform tailored for Medi-Caps students called <a href="https://medinotes.live" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors">Medinotes.</a></p>
-                    <p class="text-gray-500 font-normal">Outside of this, I work on full-stack AI products and experiment with 3D web experiences.</p>
+            <!-- Desktop Layout -->
+            <div class="hidden md:flex md:flex-row md:items-center md:gap-24">
+                <!-- Hero Image -->
+                <div class="reveal-up relative w-full max-w-[350px] aspect-square flex-shrink-0 md:ml-12">
+                    <div class="w-full h-full rounded-full overflow-hidden" style="filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));">
+                        <img src="Taizun.png" alt="Hero Image" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Hero Text -->
+                <div class="reveal-up reveal-delay-1 flex flex-col gap-8 max-w-2xl">
+                    <h1 class="text-[88px] leading-[0.95] tracking-tighter-custom font-medium text-[#0e0e0e]">
+                        AI Developer
+                    </h1>
+                    <div class="text-2xl leading-relaxed font-medium text-[#0e0e0e] space-y-1">
+                        <p>Currently scaling a learning platform tailored for Medi-Caps students called <a href="https://medinotes.live" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors">Medinotes.</a></p>
+                        <p class="text-gray-500 font-normal">Outside of this, I work on full-stack AI products and experiment with 3D web experiences.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -193,7 +220,7 @@ scroll-behavior: smooth;
              <div class="reveal-up project-card group relative w-full mb-32">
                 <a href="https://code.taizun.site" target="_blank" class="block w-full">
                     <div class="relative w-full aspect-[16/9] overflow-hidden rounded-[24px]">
-                        <img src="https://framerusercontent.com/images/conknpf49hPAVpbVfu0eEPiE4SM.jpeg" alt="Vanguard Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <img src="p4.png" alt="Vanguard Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="project-overlay absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 transition-opacity duration-300"></div>
                         <div class="view-case-study absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 bg-white text-black px-6 py-3 rounded-full font-medium text-sm pointer-events-none scale-95">
                             View website
@@ -202,7 +229,7 @@ scroll-behavior: smooth;
                     
                     <div class="project-info mt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-2 transition-opacity duration-300 group-hover:opacity-50">
                         <h3 class="text-2xl font-medium">Pyzun</h3>
-                        <p class="text-lg text-gray-400 font-normal max-w-md text-left md:text-right">An AI code compiler with 40+ languages and support for creating your own language.</p>p>
+                        <p class="text-lg text-gray-400 font-normal max-w-md text-left md:text-right">An AI code compiler with 40+ languages and support for creating your own language.</p>
                     </div>
                 </a>
             </div>
