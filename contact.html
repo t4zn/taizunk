@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Taizun Kaptan</title>
+    <meta name="description" content="Get in touch with Taizun Kaptan, AI Developer.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Inter Tight', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --color-text-main: #0e0e0e;
+            --color-text-muted: #6d6d6d;
+            --color-bg: #ffffff;
+        }
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text-main);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            letter-spacing: -0.02em;
+        }
+        .tracking-tighter-custom {
+            letter-spacing: -0.03em;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gray-200 selection:text-black bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-transparent transition-all duration-300">
+        <div class="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="text-sm font-semibold tracking-tight z-10 relative">
+                Taizun Kaptan
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+                <a href="index.html#work" class="hover:text-black transition-colors text-sm font-medium text-gray-500">Work</a>
+                <a href="index.html#about" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">About</a>
+            </div>
+
+            <!-- Back Button -->
+            <a href="index.html" class="group flex items-center gap-2 bg-[#0e0e0e] text-white px-5 py-2.5 rounded-full hover:scale-105 transition-transform active:scale-95 text-sm font-medium">
+                <span>Back</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="w-full overflow-hidden">
+        
+        <!-- Contact Section -->
+        <section class="max-w-[600px] mx-auto px-6 pt-32 pb-32 md:pt-48 md:pb-48">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-[88px] leading-[0.95] tracking-tighter-custom font-medium text-[#0e0e0e] mb-6">
+                    Contact
+                </h1>
+                <p class="text-xl text-gray-500">
+                    Let's work together
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="space-y-6" onsubmit="handleSubmit(event)" method="POST" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSexUH392RlxmEP7zyhB7ccVMFhTcBAFlMZsZEapqUjGE12iSw/formResponse" target="hidden_iframe">
+                
+                <div class="space-y-4">
+                    <input 
+                        id="fullname" 
+                        name="entry.1439200971" 
+                        placeholder="Name" 
+                        type="text" 
+                        required
+                        class="w-full px-0 py-4 border-0 border-b border-gray-200 focus:border-black outline-none transition-colors bg-transparent text-lg placeholder-gray-400"
+                    />
+                    
+                    <input 
+                        id="email" 
+                        name="entry.199000082" 
+                        placeholder="Email" 
+                        type="email" 
+                        required
+                        class="w-full px-0 py-4 border-0 border-b border-gray-200 focus:border-black outline-none transition-colors bg-transparent text-lg placeholder-gray-400"
+                    />
+                    
+                    <textarea 
+                        placeholder="Message" 
+                        id="content" 
+                        name="entry.1278587839" 
+                        rows="4"
+                        required
+                        class="w-full px-0 py-4 border-0 border-b border-gray-200 focus:border-black outline-none transition-colors bg-transparent text-lg placeholder-gray-400 resize-none"
+                    ></textarea>
+                </div>
+
+                <button 
+                    type="submit" 
+                    class="w-full bg-[#0e0e0e] text-white py-4 rounded-full hover:scale-105 transition-transform active:scale-95 font-medium text-lg mt-8"
+                >
+                    Send Message
+                </button>
+            </form>
+
+            <!-- Hidden iframe for form submission -->
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+            <!-- Success Message -->
+            <div id="success-message" class="hidden mt-8 text-center">
+                <p class="text-green-600 font-medium">Message sent successfully!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-gray-100">
+        <div class="max-w-[600px] mx-auto px-6 py-8 text-center">
+            <div class="text-sm text-gray-400">
+                © 2025 Taizun Kaptan
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function copyEmail(button) {
+            const email = "taizun8@gmail.com";
+            const textSpan = button.querySelector('.email-text');
+            const originalText = textSpan.innerText;
+            
+            navigator.clipboard.writeText(email).then(() => {
+                textSpan.innerText = "Email copied!";
+                setTimeout(() => {
+                    textSpan.innerText = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Submit the form
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Submit to Google Forms
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                // Show success message
+                document.getElementById('success-message').classList.remove('hidden');
+                
+                // Reset form
+                form.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('success-message').classList.add('hidden');
+                }, 5000);
+            }).catch(err => {
+                console.error('Error submitting form:', err);
+                alert('There was an error sending your message. Please try again or email me directly.');
+            });
+        }
+    </script>
+
+</body>
+</html>
